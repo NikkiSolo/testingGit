@@ -1,0 +1,31 @@
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Просто js-задачи</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</script>
+</head>
+<body>
+	<h1>Форум.нет</h1>
+	<img id="smile" src="images/2.gif">
+	<p class="greeting-text">Подели какое-либо число нацело!</p>
+	<form action="myChecking">
+		<div><input type="number" id="num1"></div>
+		<div><input type="number" id="num2"></div>
+		<div><input type="button" id="button-divide" value="/"></div>
+		<div><input type="number" id="division"></div>
+		<script>
+	 		$("#button-divide").click(function(){
+  				$("#division").val( Math.floor( +$("#num1").val() / +$("#num2").val() ));
+			})
+	 	</script>
+	</form>
+		<p class="log-text">К примеру: 5/2</p>
+	</div>
+</body>
+</html>
